@@ -1,3 +1,8 @@
+import React from {quotes}react{quotes};
+import { render } from {quotes}@testing-library/react{quotes};
 import {componentName} from {quotes}./{componentName}{quotes};
 
-export default {componentName};
+test('', () => {
+  const { getByText } = render(<{componentName} />);
+});
+

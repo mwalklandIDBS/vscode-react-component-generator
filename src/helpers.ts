@@ -84,7 +84,7 @@ export class FileHelper {
             .replace(/{componentName}/g, compName)
             .replace(/{quotes}/g, this.getQuotes(globalConfig));
 
-        let filename = `${componentDir}/index.${indexConfig.extension}`;
+        let filename = `${componentDir}/${compName}.test.js`;
         if (indexConfig.create) {
             return this.createFile(filename, indexContent)
                 .map(result => filename);
